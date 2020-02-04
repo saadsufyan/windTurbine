@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="23px" viewBox="0 0 12 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>storm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="storm" transform="translate(6.000000, 11.000000) rotate(-270.000000) translate(-6.000000, -11.000000) translate(-5.000000, 5.000000)" stroke="#50A8B4">
+            <path d="M20.5722137,0.000143359375 C21.1456512,0.573580859 21.5040496,1.36205742 21.5040496,2.29389336 C21.5040496,3.2257293 21.1456512,4.01420586 20.5722137,4.58764336 C19.9987762,5.16108086 19.2102996,5.5194793 18.2784637,5.5194793 L0.000143359375,5.5194793" id="Stroke-1"></path>
+            <path d="M18.6367188,7.16796875 L4.30078125,7.16796875" id="Stroke-3"></path>
+            <path d="M20.0703125,11.9707945 C20.0703125,10.7522398 19.1384766,9.82040391 17.9199219,9.82040391 L7.16796875,9.82040391" id="Stroke-5"></path>
+        </g>
+    </g>
+</svg>

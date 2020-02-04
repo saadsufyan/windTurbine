@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="159px" viewBox="0 0 33 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>BottomMill@1,5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.1475759%" y1="0.0399355444%" x2="50.1475759%" y2="100.06284%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#EDEDEE" stop-opacity="0.7198" offset="5.447524%"></stop>
+            <stop stop-color="#BEBFC1" stop-opacity="0.4876" offset="21.23%"></stop>
+            <stop stop-color="#9C9EA0" stop-opacity="0.2818" offset="35.21%"></stop>
+            <stop stop-color="#88898C" stop-opacity="0.1123" offset="46.73%"></stop>
+            <stop stop-color="#808285" stop-opacity="1.815468e-08" offset="54.36%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.147226127%" y1="49.9600819%" x2="100.014719%" y2="49.9600819%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E6E7E8" offset="35.59%"></stop>
+            <stop stop-color="#808285" offset="61.26%"></stop>
+            <stop stop-color="#E6E7E8" offset="86.85%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="60.017616%" cy="4.43262498%" fx="60.017616%" fy="4.43262498%" r="153.649399%" gradientTransform="translate(0.600176,0.044326),scale(1.000000,0.200859),translate(-0.600176,-0.044326)" id="radialGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#808285" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="60.0672382%" cy="4.47547216%" fx="60.0672382%" fy="4.47547216%" r="153.619851%" gradientTransform="translate(0.600672,0.044755),scale(1.000000,0.200808),translate(-0.600672,-0.044755)" id="radialGradient-4">
+            <stop stop-color="#414042" stop-opacity="0.9" offset="0%"></stop>
+            <stop stop-color="#7B7C7F" stop-opacity="0.3591" offset="45.29%"></stop>
+            <stop stop-color="#7E8083" stop-opacity="0.03283559" offset="66.71%"></stop>
+        </radialGradient>
+        <linearGradient x1="58.6621429%" y1="99.3382143%" x2="41.2773214%" y2="0.743571429%" id="linearGradient-5">
+            <stop stop-color="#939598" offset="34.65%"></stop>
+            <stop stop-color="#F1F2F2" offset="99.95%"></stop>
+        </linearGradient>
+        <linearGradient x1="58.65%" y1="99.304375%" x2="41.279375%" y2="0.79125%" id="linearGradient-6">
+            <stop stop-color="#F1F2F2" offset="0.05195505%"></stop>
+            <stop stop-color="#939598" offset="65.35%"></stop>
+        </linearGradient>
+        <radialGradient cx="49.9581281%" cy="50.0564039%" fx="49.9581281%" fy="50.0564039%" r="50.120197%" gradientTransform="translate(0.499581,0.500564),scale(0.996543,1.000000),translate(-0.499581,-0.500564)" id="radialGradient-7">
+            <stop stop-color="#4F4F51" offset="52.1%"></stop>
+            <stop stop-color="#424243" offset="91.96%"></stop>
+            <stop stop-color="#414042" offset="100%"></stop>
+            <stop stop-color="#383839" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Turbines-detail" transform="translate(-171.000000, -285.000000)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(5.000000, 143.000000)">
+                <g id="molen-symetrisch" transform="translate(104.000000, 72.000000)">
+                    <g id="Layer_3">
+                        <g id="BottomMill" transform="translate(62.242296, 70.562970)">
+                            <path d="M5.93871453,192.853148 L3.25487239,145.166238 C3.25487239,145.166238 5.36768428,141.581184 9.70751413,141.182845 C14.104447,140.784505 19.0153071,140.613789 22.2701795,141.182845 C25.5250519,141.751901 28.3802031,144.028126 28.7228212,144.767899 C29.1225424,145.507672 24.3258884,201.218275 24.3258884,201.218275 C24.3258884,201.218275 19.5292343,197.405598 15.9317438,197.405598 C12.3913563,197.462504 5.93871453,192.853148 5.93871453,192.853148 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                            <path d="M9.76461716,29.9892621 L3.31197541,145.906011 C3.31197541,145.906011 5.42478731,149.491065 9.76461716,149.889405 C14.16155,150.287744 19.0724101,150.458461 22.3272825,149.889405 C25.5821549,149.320349 28.4373061,147.044124 28.7799242,146.304351 C29.1225424,145.564578 23.2409309,30.0461677 23.2409309,30.0461677 C23.2409309,30.0461677 19.6434404,23.3882101 15.9888468,23.3882101 C12.3342532,23.3882101 9.76461716,29.9892621 9.76461716,29.9892621 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+                            <path d="M9.76461716,29.9892621 L3.31197541,145.906011 C3.31197541,145.906011 5.42478731,149.491065 9.76461716,149.889405 C14.16155,150.287744 19.0724101,150.458461 22.3272825,149.889405 C25.5821549,149.320349 28.4373061,147.044124 28.7799242,146.304351 C29.1225424,145.564578 23.2409309,30.0461677 23.2409309,30.0461677 C23.2409309,30.0461677 19.6434404,23.3882101 15.9888468,23.3882101 C12.3342532,23.3882101 9.76461716,29.9892621 9.76461716,29.9892621 Z" id="Shape" fill="url(#radialGradient-3)"></path>
+                            <path d="M9.70751413,29.9892621 L3.25487239,145.906011 C3.25487239,145.906011 5.36768428,149.491065 9.70751413,149.889405 C14.104447,150.287744 19.0153071,150.458461 22.2701795,149.889405 C25.5250519,149.320349 28.3802031,147.044124 28.7228212,146.304351 C29.1225424,145.564578 23.1838279,30.0461677 23.1838279,30.0461677 C23.1838279,30.0461677 19.6434404,23.3313045 15.9888468,23.3313045 C12.3913563,23.3313045 9.70751413,29.9892621 9.70751413,29.9892621 Z" id="Shape" fill="url(#radialGradient-4)" opacity="0.91"></path>
+                            <g id="Group">
+                                <ellipse id="Oval" fill="url(#linearGradient-5)" cx="16.0459498" cy="16.1611963" rx="15.9888468" ry="15.9335738"></ellipse>
+                                <ellipse id="Oval" fill="url(#linearGradient-6)" cx="16.0459498" cy="16.1611963" rx="13.7047258" ry="13.657349"></ellipse>
+                            </g>
+                            <ellipse id="Oval" fill="url(#radialGradient-7)" cx="16.0459498" cy="16.1611963" rx="11.5919139" ry="11.551841"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

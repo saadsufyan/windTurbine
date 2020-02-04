@@ -1,0 +1,113 @@
+.inbox {
+
+    .message-container {
+        background-color:$primaryColor;
+        margin:20px;
+        box-shadow:0px 2px 15px -5px rgba(0,0,0,1);
+        overflow:hidden;
+
+        &:after {
+            content: '';
+            display:block;
+            clear:both;
+        }
+        p {
+            color: $white;
+        }
+        .content {
+            background: linear-gradient($primaryColor, rgba(0,0,0,0.2));
+            background: -webkit-linear-gradient($primaryColor, rgba(0,0,0,0.2));
+            padding:15px 15px 1px 15px;
+
+            transition: .275s all cubic-bezier(0.4, 0.0, 0.2, 1);
+            .status {
+                width:20px;
+                display:block;
+                height:94px;
+                float:left;
+                position:relative;
+                transition: .275s all cubic-bezier(0.4, 0.0, 0.2, 1);
+                .status-indicator {
+                    width:8px;
+                    height:8px;
+                    background-color: $notification-green;
+                    display:block;
+                    border-radius:50%;
+                    position:absolute;
+                    top:50%;
+                    transform:translateY(-50%);
+                }
+            }
+            .header {
+                margin-top:0px;
+                font-size:0.85em;
+                font-weight: 600;
+                margin-bottom:0px;
+                .date {
+                    font-size:0.75em;
+                    color: $labelGray;
+                }
+            }
+            .body {
+                -webkit-transform: translate3d(0,0,0);
+                -moz-transform: translate3d(0,0,0);
+                -ms-transform: translate3d(0,0,0);
+                -o-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+
+                margin:10px;
+                margin-top:5px;
+                font-weight:300;
+                height:42px;
+                font-size:0.75em;
+                text-overflow: ellipsis;
+                overflow:hidden;
+                -webkit-box-orient: vertical;
+                //-webkit-line-clamp: 2;
+                display: block; /* Fallback for non-webkit */
+                display: -webkit-box;
+                transition: .375s height cubic-bezier(0.0, 0.0, 0.2, 1);
+
+                p {
+                    margin: 0px;
+                }
+            }
+        }
+        .footer {
+            float:right;
+            padding:10px;
+            opacity: 1;
+            transition: .275s all cubic-bezier(0.0, 0.0, 0.2, 1);
+            span {
+                font-size:0.85em;
+                color: $secondaryColor;
+                text-align:right;
+                display:block;
+            }
+        }
+
+
+        &.open {
+            .content {
+                //background: none;
+                padding-bottom:15px;
+                .status {
+                    opacity: 0;
+                }
+                .body {
+                    //transition: none;
+                    height:auto;
+                }
+            }
+            .footer {
+                //opacity: 0;
+                //padding:0px;
+                //height:0px;
+
+                .delete {
+                    color: $mf-error-color;
+                }
+            }
+        }
+    }
+}

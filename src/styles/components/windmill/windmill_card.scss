@@ -1,0 +1,194 @@
+
+.windmill_card {
+  width: 100%;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+
+  .link-span {
+    color: $secondaryColor;
+  }
+
+  .error-message {
+    font-weight: 300;
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+
+    span {
+      text-transform: none;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  }
+
+  .upper-container {
+    padding: 5px 5px 0;
+    min-height: 80px;
+
+    background: $card-gradient-wk;
+    background: $card-gradient;
+
+    display: flex;
+    flex-direction: row;
+
+    .turbine-container {
+      width: 25%;
+      max-width: 25%;
+      position: relative;
+      margin-right: 10px;
+      display: block;
+      height: 100%;
+      min-height: 75px;
+
+      .turbine-with-chart {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &.windmill-warn {
+      background-color: $warning;
+    }
+
+    &.windmill-error {
+      background-color: $error;
+    }
+
+    .label-container {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      p {
+        margin: 0;
+        color: $white;
+        font-size: 18px;
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .notification-icon {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 5px;
+      margin-left: 5px;
+      z-index: 3;
+      position: relative;
+      z-index: 9;
+
+      &.warning,
+      &.offline {
+        background-image: url('~@/assets/images/warning-geel.svg');
+      }
+      &.error {
+        background-image: url('~@/assets/images/warning-red.svg');
+      }
+    }
+
+    .info-container {
+      color: $white;
+      padding: 10px 5px;
+      width: 75%;
+
+      .windmill-title {
+        font-weight: 700;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-transform: capitalize;
+        max-height: 40px;
+        margin: 0 0 10px;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        margin-bottom: 0px;
+
+        .windmillName {
+          display: block;
+          white-space: normal;
+
+        }
+
+        .status-message {
+          margin-left: 10px;
+          float: right;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        .info-col {
+          text-transform: none;
+          &:first-of-type {
+            margin-left: 0;
+
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+
+          }
+
+          .link-span {
+            text-transform: uppercase;
+          }
+
+          .stats-value {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: normal;
+            text-transform: none;
+
+          }
+        }
+      }
+    }
+
+  }
+
+  .lower-container {
+    padding: 5px 10px;
+    display: flex;
+    height: 35px;
+    flex-direction: column;
+    width: 100%;
+    align-self: flex-end;
+    justify-content: center;
+
+    .link-span {
+      align-self: flex-end;
+      height: 30px;
+      display: block;
+      text-shadow: 1px 1px 5px #000000;
+      font-size: 16px;
+    }
+  }
+
+  .status-message {
+    font-style: italic;
+    font-size: 12px;
+    //text-align:right;
+    display: block;
+
+    &.warning,
+    &.offline {
+      color: $warning;
+
+    }
+    &.error {
+      color: $error;
+    }
+  }
+}

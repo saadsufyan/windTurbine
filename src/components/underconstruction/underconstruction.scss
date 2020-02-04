@@ -1,0 +1,16 @@
+.ico-under-construction {
+	mask: url(../images/under_construction.svg) no-repeat 50% 50%/cover;
+    -webkit-mask: url(../images/under_construction.svg) no-repeat 50% 50%/contain;
+    display: block;
+    background-color: #d0d0d0;
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+    margin-top:20vh;
+}
+
+.l-under-construction {
+	color: #d0d0d0;
+	text-transform:uppercase;
+	text-align:center;
+}

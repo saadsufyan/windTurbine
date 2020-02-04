@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="24px" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>WarningGeel@1,5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.4" offset="5%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="20%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="80%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.02" offset="95.0255322%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.04" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-15.4%" y="-11.5%" width="130.8%" height="134.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Windparken" transform="translate(-13.000000, -1087.000000)">
+            <g id="Group-7-Copy-6" transform="translate(5.000000, 1078.000000)">
+                <g id="WarningGeel" filter="url(#filter-3)" transform="translate(9.000000, 7.000000)">
+                    <polygon id="Shape" transform="translate(13.475053, 12.541586) scale(1, -1) translate(-13.475053, -12.541586) " points="25.9501053 -1.42108547e-14 1 -1.42108547e-14 1 25.0831726 25.9501053 25.0831726"></polygon>
+                    <path d="M12.7495602,15.2586048 C12.7495602,15.4011307 12.6339191,15.5160352 12.4913933,15.5160352 L10.6223529,15.5160352 C10.479827,15.5160352 10.3645542,15.4007624 10.3645542,15.2586048 L10.3645542,8.16914123 C10.3645542,8.02698367 10.479827,7.91134255 10.6223529,7.91134255 L12.4913933,7.91134255 C12.6339191,7.91134255 12.7495602,8.02661539 12.7495602,8.16914123 L12.7495602,15.2586048 Z M12.7495602,19.0283581 C12.7495602,19.1712522 12.6339191,19.286525 12.4913933,19.286525 L10.6223529,19.286525 C10.479827,19.286525 10.3645542,19.1712522 10.3645542,19.0283581 L10.3645542,17.3530349 C10.3645542,17.2105091 10.479827,17.094868 10.6223529,17.094868 L12.4913933,17.094868 C12.6339191,17.094868 12.7495602,17.2105091 12.7495602,17.3530349 L12.7495602,19.0283581 Z M21.9301394,18.7267336 L13.1171075,3.46284224 C12.7948591,2.90452397 12.1993442,2.56054687 11.5544792,2.56054687 C10.9096143,2.56054687 10.3140993,2.90452397 9.99148268,3.46284224 L1.11584253,18.8364822 C0.793594186,19.3948005 0.793594186,20.0823864 1.11584253,20.6410729 C1.43809088,21.1993912 2.0339741,21.543 2.67883908,21.543 L20.4301194,21.543 L20.4356436,21.543 C21.4325879,21.543 22.2402344,20.7353536 22.2402344,19.7387775 C22.2402344,19.3638646 22.1256981,19.0147316 21.9301394,18.7267336 L21.9301394,18.7267336 Z" id="Fill-1" fill="#FFD368"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

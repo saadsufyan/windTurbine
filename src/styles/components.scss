@@ -1,0 +1,16 @@
+.ios {
+	.scroll-container {
+		height: calc(100vh - 56px);
+	}
+}
+.scroll-container {
+	overflow:scroll;
+	height:  calc(100vh - 40px);
+}
+
+.card {
+    background-color: $card-bgcolor;
+    box-shadow: $card-box-shadow;
+    border-radius: 2px;
+    margin:0px;
+}

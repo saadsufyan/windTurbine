@@ -1,0 +1,62 @@
+// Framework7
+@import '~@/shared-modules/framework7/1.5.3/css/framework7.material.colors.min';
+@import '~@/shared-modules/framework7/1.5.3/css/framework7.material.min';
+@import '~spinthatshit/src/loaders';
+
+// Side-menu styling
+//@import '../../node_modules/@material/drawer/dist/mdc-drawer.scss';
+
+// VueJS Material
+@import '../../node_modules/vue-material/dist/vue-material.css';
+
+// Font awesome
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+//@import '~@/shared-modules/font-awesome/4.7.0/scss/font-awesome.scss';
+
+// Material form elements
+// Source: https://codepen.io/jonnitto/pen/OVmvPB
+@import '~@/shared-modules/material_form/material_form.scss';
+
+// Touch Menu Like Android
+@import '~@/lib/touch-menu/touch-menu-la.scss';
+
+// Custom CSS
+@import 'functions';
+@import 'colors';
+@import 'font';
+@import 'mixins';
+@import 'transitions';
+@import 'components.scss';
+@import 'icons.scss';
+@import 'animations.scss';
+@import 'globals.scss';
+@import 'tabbar.scss';
+@import 'text.scss';
+
+// Checkbox
+@import 'components/checkbox';
+@import 'components/radiobutton';
+
+@import 'components/full-page-loader';
+@import 'components/sidemenu/sidemenu';
+@import 'components/sidemenu/inbox';
+@import 'components/login/login';
+@import 'components/navigation/navbar';
+@import 'components/overview/overview';
+@import 'components/park/park';
+@import 'components/turbine/turbine';
+@import 'components/settings/settings';
+@import 'components/account/account';
+@import 'components/modal';
+@import 'components/select-with-modal';
+@import 'components/dropdown-with-modal';
+
+//pages
+@import 'components/windmill/windmill';
+@import 'components/windmill/windmill_card';
+@import 'components/hexagon/hexagon';
+@import 'components/loader/loader';
+@import 'components/search/search';
+@import 'components/turbine-with-chart/turbine-with-chart';
+@import 'components/overview-card/overview-card';

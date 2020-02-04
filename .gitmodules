@@ -1,0 +1,3 @@
+[submodule "src/shared-modules"]
+	path = src/shared-modules
+	url = git@bitbucket.org:freshapple/hybrid-shared.git

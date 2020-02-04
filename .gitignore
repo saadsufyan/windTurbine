@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+node_modules/
+npm-debug.log
+assets/js/*
+assets/css/*
+plugins/*
+www/assets/js/*
+www/assets/css
+platforms/*
+app/assets/
+www/*
+yarn*

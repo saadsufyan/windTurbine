@@ -1,0 +1,104 @@
+
+$baseTransitionDuration: all 0.5s ease;
+
+.view{
+	&.element{
+
+		&.anim-enter-active, &.anim-leave-active {
+		  transition: opacity .5s
+		}
+		&.anim-enter, &.anim-leave-to /* .fade-leave-active in <2.1.8 */ {
+			  opacity: 0
+		}
+	}
+
+	&.overview, &.anim-container, &.statistics, &.weather, &.settings, &.account{
+		&.anim-enter-active, &.anim-leave-active {
+			transition: all .5s;
+			transform: translateY(0vh);
+		}
+		&.anim-enter, &.anim-leave-to /* .fade-leave-active in <2.1.8 */ {
+			transform: translateY(100vh);
+		}
+	}
+}
+
+
+/***
+		Transition: Login Form
+			Transition when logging in
+			1. Fades the login view
+			2. Move the logo container down a bit
+			3. Fade out full login view
+			4. Slide in top menu bar
+			Slides in the top menu bar
+***/
+
+$loginTransitionDuration: all 1.225s ease;
+
+.initial-enter-enter-active, .initial-enter-leave-active{
+	transition: all 2s ease;
+}
+
+.initial-enter-enter, .initial-enter-leave-to {
+	opacity:0;
+}
+
+.initial-enter-leave-to {
+	.logo-container {
+		animation: spinnerOut 3s ease-out forwards;
+
+
+		@keyframes spinnerOut{
+			0%{
+					transform:translateY(0%);
+			}
+			10%{
+					transform:translateY(105%);
+			}
+		}
+		h1 {
+			opacity: 0;
+			height:0;
+		}
+	}
+	.login-form {
+		transform:translateY(50%);
+		opacity: 0;
+	}
+}
+
+/***
+		End transition: Login Form
+***/
+
+.transition-view {
+	transition: all 5s;
+	&.initial-enter-enter-active, &.initial-enter-leave-active {
+		transform: rotate(180deg);
+	}
+	&.initial-enter-enter, &.initial-enter-leave-to /* .fade-leave-active in <2.1.8 */ {
+		transform: rotate(90deg);
+	}
+}
+
+.transition-view {
+		transition: all .75s;
+		&.login-animation-enter-active, &.login-animation-leave-active {
+
+			transform: translateY(0vh);
+		}
+		&.login-animation-enter, &.login-animation-leave-to /* .fade-leave-active in <2.1.8 */ {
+
+			transform: translateY(100vh);
+		}
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+  opacity: 1;
+
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}

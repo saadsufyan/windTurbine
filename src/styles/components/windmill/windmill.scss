@@ -1,0 +1,44 @@
+.windmill {
+    position: relative;
+    svg {
+
+        position: absolute;
+        // width: 100%;
+        // height: 100%;
+        path {
+            fill: black
+        }
+    ;
+        circle {
+            fill: black
+        }
+    ;
+    }
+}
+
+.singleWindmill {
+    &.errorWindmill {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+
+        .windmill-holder {
+            //display: flex;
+            //height: 90px;
+            //align-self: flex-end;
+        }
+        > a {
+            //display: flex;
+            flex: 1;
+            width: 100%;
+        }
+        .upper-container {
+            //width: 40%;
+            //height: 100%;
+        }
+        .lower-container {
+            //width: 60%;
+        }
+
+    }
+}

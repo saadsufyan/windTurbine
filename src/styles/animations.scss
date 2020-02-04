@@ -1,0 +1,38 @@
+@-webkit-keyframes rotating {
+	from {
+		-ms-transform: rotate(0deg) translateX(-50%);
+		-moz-transform: rotate(0deg) translateX(-50%);
+		-webkit-transform: rotate(0deg) translateX(-50%);
+		-o-transform: rotate(0deg) translateX(-50%);
+		transform: rotate(0deg) translateX(-50%);
+	}
+	to {
+		-ms-transform: rotate(360deg) translateX(-50%);
+		-moz-transform: rotate(360deg) translateX(-50%);
+		-webkit-transform: rotate(360deg) translateX(-50%);
+		-o-transform: rotate(360deg) translateX(-50%);
+		transform: rotate(360deg) translateX(-50%);
+	}
+}
+
+@-webkit-keyframes pulse {
+    from {transform: scale(05);}
+    50% {transform: scale(1.2);}
+    to {transform: scale(1);}
+}
+
+
+@-webkit-keyframes bounce {
+	0% {
+		transform: translateX(-5%);
+	}
+	25% {
+		transform: translateX(5%);
+	}
+	50% {
+		transform: translateX(-5%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

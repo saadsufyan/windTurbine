@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>HomeBlue@1,5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu" transform="translate(-22.000000, -286.000000)" fill="#567EC6">
+            <g id="side-nav-drawer" transform="translate(-2.000000, 0.000000)">
+                <g id="list" transform="translate(24.074013, 283.240029)">
+                    <g id="icons" transform="translate(-0.000000, 3.648129)">
+                        <path d="M0,8 L0,19.96768 L6.57097289,19.96768 L6.57097289,14.72 C6.57097289,12.8 8.13397129,11.232 10.0478469,11.232 L10.1116427,11.232 C12.0255183,11.232 13.5885167,12.8 13.5885167,14.72 L13.5885167,20 L20,20 L20,8 L10.015949,0 L0,8 Z" id="HomeBlue"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

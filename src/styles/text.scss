@@ -1,0 +1,48 @@
+$primaryFont: 'Roboto', sans-serif;
+$primaryFontLight: 'RobotoLight', sans-serif;
+$primaryFontBold: 'RobotoBold', sans-serif;
+
+.text-purple {
+    color: $purple;
+}
+
+.text-aquamarine {
+    color: $aquamarine;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-light {
+    font-family: $primaryFontLight!important;
+}
+
+.text-bold{
+    font-family: $primaryFontBold!important;
+}
+
+.lowercased {
+    text-transform: lowercase;
+}
+
+.uppercased {
+    text-transform: uppercase;
+}
+
+.capitalized{
+    text-transform: capitalize;
+}

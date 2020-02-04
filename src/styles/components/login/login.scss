@@ -1,0 +1,140 @@
+.login {
+  overflow: hidden !important;
+  &.view {
+    background-image: url(~@/assets/images/login_background.png);
+    background-size: cover;
+    background-position: 50% 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form-link {
+    display: block;
+    text-align: center;
+    color: $white;
+    font-size: 0.85em;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .item-input {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  .loader {
+    &.loading {
+      background-color: transparent;
+    }
+    position: absolute;
+    right: 20px;
+    float: right;
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .material-container {
+    padding: 25px 30px;
+    max-width: 90%;
+    background-color: #292735;
+
+    max-height: 330px;
+    position: static;
+    bottom: auto;
+    left: auto;
+  }
+
+  .logo-container {
+    margin: 10vh 20px 60px 20px;
+    margin-bottom: auto;
+    height: auto;
+    position: relative;
+    transition: $loginTransitionDuration;
+
+    .logo-image {
+      text-align: center;
+      img {
+        animation: spin 10s infinite linear;
+      }
+    }
+    h1 {
+      transition: $loginTransitionDuration;
+      font-family: 'RobotoLight', sans-serif;
+      color: $white;
+      font-weight: 300;
+      font-size: 3.35em;
+      text-align: center;
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+
+  .form-group {
+
+    .bar {
+      border-bottom: ($mf-font-size / 16) solid $lightGray;
+    }
+
+    &.has-error {
+      animation: .325s bounce linear;
+    }
+
+    select,
+    input:focus,
+    input:valid,
+    input.form-file,
+    input.has-value,
+    textarea.form-file,
+    textarea.has-value {
+      color: $white;
+
+      ~ .control-label {
+        font-size: $mf-active-font-size;
+        color: $formHelper;
+        top: $mf-active-top;
+        left: 0;
+      }
+    }
+
+    select,
+    input,
+    textarea {
+      &:focus {
+        outline: none;
+
+        ~ .control-label {
+          color: $formHelper;
+        }
+      }
+    }
+
+    .control-label {
+      top: ($mf-font-size / 4);
+      pointer-events: none;
+      padding-left: $mf-spacer;
+      z-index: 1;
+      color: $formHelper;
+      font-size: $mf-font-size;
+      font-weight: 300;
+      transition: all $mf-transition-speed ease;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

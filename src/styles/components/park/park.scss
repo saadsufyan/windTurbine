@@ -1,0 +1,811 @@
+$graphContainerTopSpace: calc(135px + 55px);
+$graphContainerWrapperHeight: calc(100% - #{$graphContainerTopSpace});
+
+#statsgraph {
+
+}
+
+.tab-holder {
+    height: calc(100% - 88px);
+    width: 100%;
+    position: relative;
+    padding: 10px 10px;
+
+    .outerGraphWrapper {
+        position: relative;
+        top: 10px;
+    }
+
+    .graphWrapper {
+        height: 50vh;
+        width: calc(100% - 30px - 20px);
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        .graphAreaWrapper {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .staticScalesHolder {
+        position: absolute;
+        top: 0;
+        width: 30px;
+        -webkit-background: $card-bgcolor-dark;
+        background: $card-bgcolor-dark;
+        &.holder-left {
+            left: 0;
+            padding-right: 5px;
+
+        }
+        &.holder-right {
+            right: 10px;
+            padding-left: 5px;
+        }
+
+        .staticScales {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: 'Arial', sans-serif;
+
+            li.scaleItem {
+                margin: 0;
+                margin-top: 0;
+                padding: 0;
+                font-size: 10px;
+                line-height: 10px;
+            }
+
+            &.scalesY {
+
+                &.left {
+                    li {
+                        color: $statistics-graph-scales-color;
+                        text-align: center;
+                    }
+                }
+                &.right {
+                    li {
+                        color: $statistics-graph-scales-color;
+                        text-align: center;
+
+                    }
+
+                }
+            }
+
+            &.scalesX {
+                li.scaleItem {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .graphLegendHolder {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    .chartLegend {
+        list-style: none;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        padding-left: 10px;
+
+        .legend-item {
+            display: inline-block;
+            font-size: 10px;
+            color: $legend-color;
+            padding: 0 5px;
+            margin-top: 0;
+            -webkit-filter: blur(0.1px);
+            -webkit-font-smoothing: antialiased;
+            span {
+                display: inline-block;
+                margin-right: 5px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.statisticsTab {
+    margin: 10px 10px 0 10px;
+    width: calc(100% - 20px);
+    height: 100%;
+    display: block;
+    box-shadow: $card-box-shadow;
+    background: $statistics-graph-bg;
+    -webkit-background: $statistics-graph-bg;
+
+    &.hasTabBar {
+        height: calc(100% - 120px);
+        margin-top: 58px;
+        padding-top: 0 !important;
+    }
+
+    .stats-header {
+        background-color: $tab-bgColor;
+        display: flex;
+        flex-direction: row;
+        color: $statistics-graph-header-color;
+        padding: 20px 15px 10px;
+        width: 100%;
+        justify-content: space-between;
+
+        .selectactivetab {
+            border-bottom: 1px solid $white;
+            position: relative;
+            height: 25px;
+        }
+
+        &.stats-header-white {
+            background-color: $statistics-graph-header-bg;
+        }
+
+        .stats-header-content {
+
+            .stats-header-title {
+                font-size: 12px;
+                color: $statistics-graph-header-color;
+            }
+
+            .contentbox-label {
+                color: $statistics-graph-header-color;
+                font-size: 28px;
+                width: 49%;
+                display: inline-block;
+                text-align: left;
+                font-weight: bold;
+
+                &:last-of-type {
+                    text-align: right;
+                }
+            }
+        }
+
+        .main-cardinfo {
+            width: 50%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            .stats-value {
+                font-size: 17px;
+                font-weight: 500;
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .stats-label {
+                font-size: 12px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+        }
+        .dropdown-with-modal {
+            justify-self: flex-end;
+            align-self: flex-start;
+
+        }
+
+    }
+    //the bar between header with "month/day/year" selection and graph, displaying the selected values
+    .selection-data-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: 15px 0 0;
+        height: 70px;
+
+        .flexbox-h {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .selection-data-item {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: flex-start;
+            flex: 1;
+
+            &:first-of-type {
+                margin-left: 0;
+                text-align: left;
+            }
+            &:last-of-type {
+                margin-right: 0;
+                text-align: right;
+            }
+
+            .mutatedUnit {
+                margin-top: 5px;
+                font-size: 0.4em;
+                height: 30px;
+            }
+
+            .selection-data-item-value {
+                font-size: 1.5em;
+                line-height: 30px;
+                font-weight: bold;
+                font-family: $primaryFont;
+                margin-right: 5px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+            }
+            .selection-data-item-label-holder {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+            }
+        }
+
+        .selection-data-item-label {
+            color: $white;
+            font-size: 0.5em; //0.6665em;
+            font-weight: 300;
+            line-height: 1.2em;
+            font-family: $primaryFont;
+            text-transform: capitalize;
+        }
+
+        .selection-data-item-label-unit {
+            color: $white;
+            text-transform: none;
+
+        }
+    }
+
+    .outerGraphWrapper {
+        position: relative;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 50vh;
+    }
+
+    .graphLegendHolder {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        height: 25px;
+        line-height: 25px;
+    }
+    .graphWrapper {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        height: 40vh;
+        width: calc(100% - 30px - 20px);
+
+        .graphAreaWrapper {
+            height: 90%;
+            left: 0;
+            position: absolute;
+            overflow-y: hidden;
+        }
+
+        .gridholder {
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            height: 100%;
+            left: 0;
+        }
+    }
+
+    .gridholder {
+        width: 100%;
+        height: 100%;
+
+        .grid {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 0 16px 0 8px;
+            flex-direction: row;
+
+            .gridcolumn {
+                height: 100%;
+                flex: 1;
+                padding: 0;
+                display: inline-block;
+                position: relative;
+
+                .toppart {
+                    width: 100%;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    padding: 7px 14px;
+                    text-align: center;
+
+                }
+
+                .middlepart {
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .bottompart {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+
+                    .xAxisLabel {
+                        width: 100%;
+                        color: $fontSecondaryColor;
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: bold;
+                    }
+
+                    .time {
+                        line-height: 12px;
+                        color: $darkgray;
+                        padding-top: 4px;
+                        padding-bottom: 8px;
+                        font-size: 0.7em;
+
+                        .hour {
+                            width: 100%;
+                            text-align: center;
+
+                        }
+                        .date {
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.weatherTab {
+    margin: 10px 10px 0 10px;
+    width: calc(100% - 20px);
+    height: 100%;
+    display: block;
+    box-shadow: 0 0 8px 0 #000000;
+
+    #statsgraph {
+        padding-left: 0;
+        margin-left: -30px;
+    }
+    &.hasTabBar {
+        height: calc(100% - 135px);
+        margin-top: 58px;
+        padding-top: 0 !important;
+    }
+
+    .staticScalesHolder {
+
+        position: absolute;
+        top: auto;
+        //bottom:11%;
+        //bottom: 2.5%;
+        bottom: 0%;
+        width: 40px;
+        height: 100%;
+
+        &.holder-left {
+            background: linear-gradient(rgba(36, 34, 43, 1), $primaryColor);
+            background: -webkit-linear-gradient(rgba(36, 34, 43, 1), $primaryColor);
+            border: none;
+
+            .scales-border {
+
+                height: 100%;
+                width: 2px;
+                background: linear-gradient(rgba(255, 255, 255, 0.025), #666D7C);
+
+                position: absolute;
+                right: 0px;
+                bottom: calc(49px + (-1.875%));
+
+                //border-right: 2px solid rgba(200, 221, 243, 0.55);
+                //-webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#666D7C), to(rgba(255, 255, 255, 0.025))) 1 100%;
+                //-webkit-border-image: -webkit-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                //-moz-border-image: -moz-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                //-o-border-image: -o-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                //border-image: linear-gradient(to top, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+            }
+
+            #scalesContainer {
+                position: absolute;
+                bottom: 38px;
+            }
+
+            .staticScales {
+                padding-top: 1vh;
+                position: absolute;
+                bottom: 0px;
+
+                li.scaleItem {
+                    font-size: 0.75em;
+                    color: $darkgray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .header {
+        background-color: $primaryColor;
+
+        .header-content {
+            padding: 15px 20px 10px;
+            display: flex;
+            flex-direction: row;
+
+            .content-left,
+            .content-right {
+                display: block;
+            }
+            .content-left {
+                flex: 1;
+                padding-right: 10px;
+            }
+            .content-right {
+                width: 60px;
+                height: 100%;
+            }
+
+            .header-title {
+                font-size: 17px;
+                font-weight: 500;
+                color: $fontPrimaryColor;
+                margin-bottom: 0;
+            }
+
+            .contentbox-label {
+                color: $white;
+                font-size: 28px;
+                width: 49%;
+                display: inline-block;
+                text-align: left;
+                font-weight: bold;
+
+                &:last-of-type {
+                    text-align: right;
+                }
+            }
+            .content-block-holder {
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+            }
+
+            .content-block {
+                flex: 1;
+                margin: 0;
+                padding: 0;
+            }
+
+            .weathertype {
+                font-size: 18px;
+                text-transform: capitalize;
+                width: 100%;
+                color: $fontPrimaryColor;
+                font-weight: 400;
+            }
+
+            .weatherinfo {
+                color: $fontPrimaryColor;
+                font-weight: bold;
+
+                .tempholder {
+                    position: relative;
+                    .value {
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+                    .symbol {
+                        font-size: 22px;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .windspeed {
+                font-size: 25px;
+                font-weight: 400;
+                color: $fontPrimaryColor;
+            }
+        }
+    }
+
+    .tab-holder {
+        //height: calc(100% - 115px);
+        height: calc(100% - 55px);
+
+        position: relative;
+        padding: 0px;
+        width: 100%;
+
+        background: linear-gradient(rgba(41, 39, 53, 0.25), $primaryColor);
+        background: -webkit-linear-gradient(rgba(41, 39, 53, 0.25), $primaryColor);
+
+        .stats-header-content {
+            padding: 20px 20px 0;
+        }
+    }
+    .outerGraphWrapper {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .graphLegendHolder {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 1px solid $lightGray;
+    }
+    .graphWrapper {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        .graphAreaWrapper {
+            width: 100%;
+
+            //bottom: 4.5%;
+
+            //top: calc(100vh / 5);
+            bottom: 28px;
+            height: calc(#{$graphContainerWrapperHeight} + calc(100vh / 10));
+
+            left: 0;
+            position: absolute;
+            overflow-y: hidden;
+        }
+
+        .gridholder {
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            left: -30px;
+        }
+    }
+
+    .gridholder {
+        width: 100%;
+        height: 100%;
+
+        .grid {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .gridcolumn {
+                height: 100%;
+                flex: 1;
+                padding: 0;
+                display: inline-block;
+                position: relative;
+
+                .gap-colors {
+                    position: absolute;
+                    width: 30px;
+                    background-color: rgba(92, 168, 207, 0.25);
+                    border-top: 2px solid $secondaryColor;
+                    &.start {
+                        left: 0;
+                    }
+                    &.end {
+                        right: 0;
+                    }
+                }
+
+                .border-right {
+                    position: absolute;
+                    bottom: 6.5%;
+                    height: 84%;
+                    right: 0;
+
+                    width: 2px;
+                    background: linear-gradient(rgba(255, 255, 255, 0.025), #666D7C);
+                    //border-right: 2px solid rgba(200, 221, 243, 0.55);
+                    //-webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#666D7C), to(rgba(255, 255, 255, 0.025))) 1 100%;
+                    //-webkit-border-image: -webkit-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                    //-moz-border-image: -moz-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                    //-o-border-image: -o-linear-gradient(bottom, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                    //border-image: linear-gradient(to top, #666D7C, rgba(255, 255, 255, 0.025)) 1 100%;
+                }
+                .toppart {
+                    width: 100%;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    padding: 7px 14px;
+                    text-align: center;
+
+                }
+
+                .middlepart {
+                    position: absolute;
+                    text-align: center;
+                    width: 100%;
+
+                    .windicon {
+                        width: 100%;
+                        height: 50px;
+                    }
+
+                    .windspeed {
+                        // opacity:0;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $white;
+                        width: 100%;
+                        line-height: 18px;
+                        span {
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .bottompart {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    //height: 13.25%;
+                    text-align: center;
+                    background-color: $primaryColor;
+                    border-top: 2px solid #666D7C;
+
+                    .windspeed {
+                        opacity: 0;
+                        position: absolute;
+                        top: -30px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 16px;
+                        font-weight: bold;
+                        width: 100%;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .topline {
+                        background-color: $primaryColor;
+                        height: 3px;
+                    }
+                    .xAxisLabel {
+                        width: 100%;
+                        color: $fontSecondaryColor;
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: bold;
+                    }
+                    .wind {
+                        font-size: 13px;
+                    }
+                    .time {
+                        line-height: 12px;
+                        color: $darkgray;
+                        padding-top: 4px;
+                        padding-bottom: 8px;
+                        font-size: 0.7em;
+
+                        .hour {
+                            width: 100%;
+                            text-align: center;
+
+                        }
+                        .date {
+                            width: 100%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .temperature {
+        font-weight: 300;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.55);
+    }
+
+    .weatherIcon {
+        width: 100%;
+        height: 28px;
+        max-width: 40px;
+        margin: 0 auto;
+        margin-bottom: 6px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        &.weatherIconLarge {
+            width: 60px;
+            height: 60px;
+            margin: 25% auto;
+
+        }
+
+    }
+
+    .wind {
+
+        i {
+            margin: 0 auto;
+            width: 23px;
+            height: 20px;
+            display: block;
+            transition: transform 1s ease-out;
+
+            background-image: url('~@/assets/images/weather/storm.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) {
+
+    .statistics-holder {
+        .graphWrapper {
+            //height: 40vh;
+
+        }
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    .statisticsTab {
+        .selection-data-holder {
+            .selection-data-item {
+                .selection-data-item-value {
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}

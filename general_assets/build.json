@@ -1,0 +1,32 @@
+{
+    "ios": {
+        "debug": {
+            "codeSignIdentity": "iPhone Development",
+            "provisioningProfile": "afca8b3c-acc9-4d15-a679-2d3c51e37fc8",
+            "developmentTeam": "S853KRF953",
+            "packageType": "development"
+        },
+        "release": {
+            "codeSignIdentity": "iPhone Distribution",
+            "provisioningProfile": "afca8b3c-acc9-4d15-a679-2d3c51e37fc8",
+            "developmentTeam": "S853KRF953",
+            "packageType": "app-store"
+        }
+    },
+    "android": {
+        "debug": {
+            "keystore": "andr_keystore/windup.keystore",
+            "storePassword": "fresh123APPkopen",
+            "alias": "windupKeyStore",
+            "password" : "fresh123APPkopen",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "andr_keystore/windup.keystore",
+            "storePassword": "fresh123APPkopen",
+            "alias": "windupKeyStore",
+            "password" : "fresh123APPkopen",
+            "keystoreType": ""
+        }
+    }
+}

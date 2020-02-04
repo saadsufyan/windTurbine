@@ -1,0 +1,192 @@
+
+.ico-search {
+	mask:url(~@/assets/images/icon_search.svg) no-repeat 50% 50% / cover;
+	-webkit-mask:url(~@/assets/images/icon_search.svg) no-repeat 50% 50% / cover;
+	display:block;
+	background-color:gray;
+}
+
+.ico-turbine {
+	display:block;
+	background-color:$primaryColor;
+	width:16px;
+	height:20px;
+}
+
+.ico-statistics {
+	display:block;
+	background-color:$primaryColor;
+	width:20px;
+	height:20px;
+}
+
+.ico-weather {
+	mask: url(~@/assets/images/weather.svg) no-repeat 50% 50% / cover;
+	-webkit-mask: url(~@/assets/images/weather.svg) no-repeat 50% 50% / cover;
+	display:block;
+	background-color:$primaryColor;
+	width:22px;
+	height:22px;
+}
+
+.ico-location {
+	mask: url(~@/assets/images/icon_location.svg) no-repeat 50% 50% / cover;
+	-webkit-mask: url(~@/assets/images/icon_location.svg) no-repeat 50% 50% / cover;
+	display:block;
+	background-color:$primaryColor;
+	width:22px;
+	height:22px;
+}
+
+.ico-under-construction {
+	mask: url(~@/assets/images/under_construction.svg) no-repeat 50% 50%/cover;
+    -webkit-mask: url(~@/assets/images/under_construction.svg) no-repeat 50% 50%/contain;
+    display: block;
+    background-color: #d0d0d0;
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+    margin-top:20vh;
+}
+
+.l-under-construction {
+	color: #d0d0d0;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.broken_clouds {
+	background-image: url('~@/assets/images/weather/broken_clouds.png');
+}
+
+.clear_sky {
+	background-image: url('~@/assets/images/weather/clear_sky.png');
+}
+
+.few_clouds {
+	background-image: url('~@/assets/images/weather/few_clouds.png');
+}
+
+.light_rain {
+	background-image: url('~@/assets/images/weather/light_rain.png');
+}
+
+.moderate_rain {
+	background-image: url('~@/assets/images/weather/rain.png');
+}
+
+.mist {
+	background-image: url('~@/assets/images/weather/mist.png');
+}
+
+.overcast_clouds {
+	background-image: url('~@/assets/images/weather/overcast_clouds.png');
+}
+
+.rain {
+	background-image: url('~@/assets/images/weather/rain.png');
+}
+
+.scattered_clouds {
+	background-image: url('~@/assets/images/weather/scattered_clouds.png');
+}
+
+.shower_rain{
+	background-image: url('~@/assets/images/weather/shower_rain.png');
+}
+
+.snow{
+	background-image: url('~@/assets/images/weather/heavy_snow.png');
+}
+
+.light_snow{
+	background-image: url('~@/assets/images/weather/light_snow.png');
+}
+
+.heavy_snow{
+	background-image: url('~@/assets/images/weather/heavy_snow.png');
+}
+
+.storm {
+	mask:url('~@/assets/images/weather/storm.svg') no-repeat 50% 50% / contain;
+	-webkit-mask:url('~@/assets/images/weather/storm.svg') no-repeat 50% 50% / contain;
+	background-color:$primaryColor;
+}
+
+.status-bulb {
+	mask: url('~@/assets/images/alertBol.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/alertBol.svg') no-repeat 50% 50% / contain;
+	background-color: $notification-green;
+
+	&.error {
+		background-color: $error;
+	}
+
+	&.warning, &.offline{
+		background-color: $warning;
+	}
+}
+.icon {
+	display:block;
+	width:15px;
+	height:15px;
+	margin:0px 15px;
+	background-color:white;
+
+	&.warning, &.offline {
+		margin: 0 5px;
+		background-color: $warning;
+	}
+
+	&.error {
+		margin: 0 5px;
+		background-color: $error;
+	}
+}
+
+.home-icon {
+	height:20px;
+	width:20px;
+	mask: url('~@/assets/images/icons/icon-home.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-home.svg') no-repeat 50% 50% / contain;
+}
+
+.engineer-icon {
+	height:17px;
+	width:20px;
+	mask: url('~@/assets/images/icons/icon-engineer.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-engineer.svg') no-repeat 50% 50% / contain;
+}
+
+.inbox-icon {
+	height:18px;
+	width:18px;
+	mask: url('~@/assets/images/icons/icon-inbox.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-inbox.svg') no-repeat 50% 50% / contain;
+}
+
+.account-icon {
+	height:20px;
+	width:17.5px;
+	mask: url('~@/assets/images/icons/icon-account.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-account.svg') no-repeat 50% 50% / contain;
+}
+.settings-icon {
+	height:20px;
+	width:19.5px;
+	mask: url('~@/assets/images/icons/icon-settings.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-settings.svg') no-repeat 50% 50% / contain;
+}
+
+.contact-icon {
+	height:20px;
+	width:19.5px;
+	mask: url('~@/assets/images/icons/icon-contact.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-contact.svg') no-repeat 50% 50% / contain;
+}
+.terms-icon {
+	height:20px;
+	width:19.5px;
+	mask: url('~@/assets/images/icons/icon-question.svg') no-repeat 50% 50% / contain;
+	-webkit-mask: url('~@/assets/images/icons/icon-question.svg') no-repeat 50% 50% / contain;
+}

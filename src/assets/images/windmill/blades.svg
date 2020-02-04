@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="157px" height="136px" viewBox="0 0 157 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>TopMill@1,5x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="74.8601498%" y1="121.986297%" x2="21.4508436%" y2="-20.3733424%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0.05195505%"></stop>
+            <stop stop-color="#C0C2C4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="75.8098311%" y1="125.581485%" x2="24.656139%" y2="-26.7000546%" id="linearGradient-2">
+            <stop stop-color="#808285" offset="0.05195505%"></stop>
+            <stop stop-color="#58595B" offset="65.35%"></stop>
+        </linearGradient>
+        <linearGradient x1="-24.8505261%" y1="93.5363228%" x2="159.790495%" y2="5.87435522%" id="linearGradient-3">
+            <stop stop-color="#C0C2C4" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="99.95%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.6974753%" y1="119.636484%" x2="66.2943597%" y2="-18.9672881%" id="linearGradient-4">
+            <stop stop-color="#A7A9AC" offset="0.05195505%"></stop>
+            <stop stop-color="#58595B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="57.2673886%" y1="65.817594%" x2="48.6217348%" y2="45.2513933%" id="linearGradient-5">
+            <stop stop-color="#C2C4C6" offset="34.65%"></stop>
+            <stop stop-color="#EFEFF0" offset="65.89%"></stop>
+            <stop stop-color="#F1F2F2" offset="99.95%"></stop>
+        </linearGradient>
+        <radialGradient cx="49.9421769%" cy="50.0778912%" fx="49.9421769%" fy="50.0778912%" r="49.8867347%" gradientTransform="translate(0.499422,0.500779),scale(0.996543,1.000000),translate(-0.499422,-0.500779)" id="radialGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#E6E7E8" offset="34.09%"></stop>
+            <stop stop-color="#A7A9AC" offset="72.65%"></stop>
+            <stop stop-color="#808285" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Turbines-detail" transform="translate(-109.000000, -215.000000)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(5.000000, 143.000000)">
+                <g id="molen-symetrisch" transform="translate(104.000000, 72.000000)">
+                    <g id="Layer_3">
+                        <g id="TopMill">
+                            <g id="Group" transform="translate(78.802174, 86.496543)">
+                                <polygon id="Shape" fill="url(#linearGradient-1)" points="2.91225424 0.455244965 30.435912 10.8120679 77.8314221 43.3051773 75.4330951 46.6626089 2.16991492 9.04799368"></polygon>
+                                <polygon id="Shape" fill="url(#linearGradient-2)" points="0.39972117 9.04799368 74.4623437 48.8819281 75.4330951 46.6626089 0.913648389 7.85297565"></polygon>
+                            </g>
+                            <g id="Group" transform="translate(69.094659, 0.000000)">
+                                <polygon id="Shape" fill="#FFFFFF" points="9.02227784 82.5700556 1.59888468 56.5072813 6.50974477 0.569056206 0.0571030243 56.7349038 7.02367199 83.8219792"></polygon>
+                                <path d="M16.2743619,81.3181319 C16.2743619,81.3181319 14.6754772,73.1806282 14.7325803,71.7579876 C14.7896833,70.3353471 12.2200472,0.170716862 12.2200472,0.170716862 L6.50974477,0.569056206 L1.59888468,56.5072813 L7.70890828,82.2855275 L16.559877,84.0496017 L16.2743619,81.3181319 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="Group" transform="translate(0.000000, 82.513150)">
+                                <polygon id="Shape" fill="url(#linearGradient-4)" points="74.2339316 6.03199579 55.0473154 25.8920574 1.42757561 50.8736249 2.05570887 52.4669822 56.2464789 28.1682822 75.6044042 7.96678689"></polygon>
+                                <polygon id="Shape" fill="url(#linearGradient-5)" points="73.7771074 0.113811241 0.0571030243 47.4592876 1.42757561 50.8736249 55.0473154 25.8920574 74.2339316 6.03199579"></polygon>
+                            </g>
+                            <ellipse id="Oval" stroke="#6D6E71" stroke-width="2" fill="url(#radialGradient-6)" cx="78.2882463" cy="86.7241659" rx="8.39414457" ry="8.36512624"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

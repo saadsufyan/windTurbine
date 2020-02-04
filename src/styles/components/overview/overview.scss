@@ -1,0 +1,165 @@
+
+.overview, .park-overview {
+    padding: 10px;
+    // transition: transform 0.1s ease;
+    // -webkit-transition: -webkit-transform 0.1s ease;
+    // transform: translate3d(0px, 0px, 0px);
+
+    color: $primaryColor;
+
+    .search-bar {
+        height: 50px;
+        input {
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+    .total-overview {
+        .blades {
+            //animation: 5.5s rotating infinite linear;
+        }
+    }
+
+    .windmill-holder {
+        height: 101%;
+        position: relative;
+
+        .big {
+            height: 100%;
+            width: 100%;
+
+            .blades {
+                position: absolute;
+                top: 10px;
+                width: 100%;
+                height: 60%;
+                // transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                transform-origin: 50% 63.5%;
+                z-index: 2;
+            }
+            .base {
+                width: 30%;
+                height: 45%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -15%;
+                z-index: 1;
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+        .small {
+            height: 25%;
+            width: 25%;
+            position: absolute;
+            top: 20px;
+
+            &.left {
+                left: 10px;
+            }
+            &.right {
+                right: 10px;
+            }
+
+            .blades {
+                position: absolute;
+                top: 0.5px;
+                width: 100%;
+                height: 70%;
+                -webkit-backface-visibility: hidden;
+                // animation: 5.5s rotating infinite linear;
+                transform-origin: 50% 63.5%;
+                z-index: 2;
+            }
+            .base {
+                width: 30%;
+                height: 48%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -15%;
+                z-index: 1;
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            path {
+                fill: white;
+            }
+            circle {
+                fill: white;
+            }
+        }
+    }
+
+    .windmills {
+        margin-bottom: 60px;
+    }
+    .windmills-container {
+        margin-bottom: 60px;
+        display:block;
+
+        .windmill_card {
+            width:100%;
+
+            //&.errorWindmill {
+            //    .upper-container {
+            //        height: 130px;
+            //    }
+            //    &:nth-child(1n + 1) {
+            //        margin-left: 0%;
+            //    }
+            //    &:nth-child(1n) {
+            //        margin-right: 0%;
+            //    }
+            //    @include breakpoint (tablet) {
+            //        &:nth-child(4n + 1) {
+            //            margin-left: 0%;
+            //        }
+            //        &:nth-child(4n) {
+            //            margin-right: 0%;
+            //        }
+            //    }
+            //}
+            //
+            //@include breakpoint (mobileonly) {
+            //    &:nth-child(2n + 1) {
+            //        margin-left: 0%;
+            //    }
+            //    &:nth-child(2n) {
+            //        margin-right: 0%;
+            //    }
+            //}
+            //
+            //@include breakpoint (phablet) {
+            //    &:nth-child(3n + 1) {
+            //        margin-left: 0%;
+            //    }
+            //    &:nth-child(3n) {
+            //        margin-right: 0%;
+            //    }
+            //}
+            //@include breakpoint (tablet) {
+            //    &:nth-child(4n + 1) {
+            //        margin-left: 0%;
+            //    }
+            //    &:nth-child(4n) {
+            //        margin-right: 0%;
+            //    }
+            //}
+        }
+    }
+
+}

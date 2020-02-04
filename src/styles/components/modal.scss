@@ -1,0 +1,118 @@
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: opacity .3s ease;
+}
+
+.modal-bg {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.modal-wrapper {
+    z-index: 1;
+
+    .modal-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        max-height: 60vh;
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+        transition: all .3s ease;
+        font-family: Helvetica, Arial, sans-serif;
+
+        .modal-header {
+            padding: 20px 25px 15px;
+            color: $modal-header-color;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            text-transform: capitalize;
+            border-bottom: 1px solid #D2D2D2;
+        }
+
+        .modal-body {
+            padding: 20px 30px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            .body-content {
+                input {
+                    width:100%;
+                    font-size:0.85em;
+                    border:none;
+                }
+            }
+        }
+
+        .modal-footer {
+            border-top: 1px solid #D2D2D2;
+            display: block;
+            padding: 0;
+            height: 50px;
+
+            .footer-content {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .footer-button {
+                font-size: 14px;
+                line-height: 16px;
+                color: $modal-footer-btn-color;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                padding: 0 20px;
+                height: 50px;
+                min-width: 75px;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+
+            }
+        }
+    }
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

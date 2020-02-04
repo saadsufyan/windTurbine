@@ -1,0 +1,13 @@
+
+.hexagon-container{
+	height: 100%;
+	width: 100%;
+    position: relative;
+	#hexagon {
+		position:relative;
+		max-width: 100%;
+		path {
+			transition: fill .5s ease-out;
+		}
+	}
+}

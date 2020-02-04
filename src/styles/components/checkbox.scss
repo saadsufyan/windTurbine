@@ -1,0 +1,87 @@
+/* Custom Code Here */
+.container{}
+
+.custom-check {
+
+    input{
+        display: none;
+        &:checked + label {
+            .box {
+                animation: animOn 0.375s 1 forwards;
+                background: rgba(#000, 0.5);
+                i {
+                    transform: translate(-50%, -50%) scale(1);
+                    transition-duration: 0.225s;
+                    transition-delay: 0.200s;
+                    opacity: 1;
+                }
+            }
+            span {
+                color: $white;
+            }
+        }
+    }
+    label {
+        min-width: 100px;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+        //flex-direction: row;
+        min-height: 60px;
+        cursor: pointer;
+        position:relative;
+        .box {
+            position:absolute;
+            background: rgba(#000, 0.3);
+            border-radius: 5px;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            transition: background 0.3ms ease;
+            &:hover {
+                background: rgba(#000, 0.5);
+            }
+
+            i {
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 20px;
+                display: inline-block;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s ease-in-out;
+                transform: translate(-50%, -50%) scale(1.5);
+            }
+        }
+        span {
+            position:absolute;
+            left: 45px;
+            //margin-left:15px;
+            color: $labelGray;
+        }
+    }
+}
+
+
+@keyframes animOn {
+    40% {
+        height: 10px;
+    }
+
+    60% {
+        height: 40px;
+    }
+
+    75% {
+        height: 25px;
+    }
+
+    100% {
+        height: 30px;
+    }
+
+}
+
+/* end of custom code */

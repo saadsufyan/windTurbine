@@ -1,0 +1,28 @@
+@mixin clearfix {
+    &:after{ 
+        display:block;
+        content: '';
+        clear:both;
+    }
+}
+
+$breakpoints: (
+  'mobileonly':   ( max-width: 539px ),
+  'phablet':  "(min-width: 540px) and (max-width: 767px)",
+  'tablet': "( min-width: 768px)",
+  'landscape': ( min-width: 992px ),
+  'laptop': ( min-width: 992px ),
+  'desktop': ( min-width: 1179px ),
+  'largedesktop' : (min-width: 1351px)
+);
+
+@mixin breakpoint($name) {
+      @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}

@@ -1,0 +1,81 @@
+/**
+ * Basic colors
+ */
+$white: #FFFFFF;
+$lightGray: #cfcfcf;
+$labelGray: rgba(255, 255, 255, 0.45);
+$darkgray: #666D7C;
+
+/**
+ * Color variables
+ */
+$primaryColor: #292735;
+$secondaryColor: #567EC6;
+$formHelper: #B6B6B6;
+$warning: #FFD368;
+$error: #FF688B;
+
+$notification-green: #3ACA60;
+$start-btn-green: #33c355;
+
+$aquamarine: #50A8B4;
+
+$backgroundColor: #201F27;
+
+$fontPrimaryColor: #ffffff;
+$fontSecondaryColor: #567EC6;
+
+$primaryButtonColor: #567EC6;
+$primaryButtonActiveColor: darken($primaryButtonColor, 25%);
+
+$gridFillColorLight: #add4e7;
+
+$card-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+$card-bgcolor-dark: #201F27;
+$card-bgcolor: #292735;
+$card-seperator: #201F27;
+
+
+$card-gradient: linear-gradient($primaryColor, #201F27 100%, rgba(32, 31, 39, 0) 90%);
+$card-gradient-wk: -webkit-linear-gradient($primaryColor, #201F27 100%, rgba(32, 31, 39, 0) 90%);
+
+$card-radialgradient: radial-gradient(circle, #201F27 0%, rgba(32, 31, 39, 0) 100%);
+$card-radialgradient-wk: -webkit-radial-gradient(circle, #201F27 0%, rgba(32, 31, 39, 0) 100%);
+
+$purple: #8A42AE;
+
+//tabs
+$tab-bgColor: #292735;
+$tab-fontColor: #666D7C;
+$tab-fontColor-active: #fff;
+$tab-underline-color: #567EC6;
+
+$modal-header-color: #000;
+$modal-content-color: #000;
+$modal-footer-btn-color: #567EC6;
+
+$radio-border-color: rgba(1, 1, 1, 0.54);
+$radio-fill-color: rgba(1, 1, 1, 0.54);
+$radio-border-color-selected: #567EC6;
+$radio-fill-color-selected: #567EC6;
+$radio-label-color: rgba(0, 0, 0, 0.87);
+
+$statistics-graph-bg: radial-gradient(circle, #201F27 0%, rgba(32, 31, 39, 0) 100%);
+$-wk-statistics-graph-bg: -webkit-radial-gradient(circle, #201F27 0%, rgba(32, 31, 39, 0) 100%);
+$statistics-graph-scales-bg: #292735;
+$statistics-graph-scales-color: #666D7C;
+$statistics-graph-header-bg: white;
+$statistics-graph-header-color: white;
+
+$dropdown-icon-color: #567EC6;
+$dropdown-button-color: $white;
+
+$legend-color: #fff;
+
+@mixin alpha-background-color($color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    background-color: $solid-color;
+    background-color: $color;
+}

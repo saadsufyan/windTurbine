@@ -1,0 +1,49 @@
+
+.tabbar {
+    background-color: $tab-bgColor;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    .toolbar-inner {
+
+        .tab-link {
+            line-height: 48px;
+            height: 48px;
+            width: auto;
+            color: $tab-fontColor !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 0 20px;
+
+            .iconholder {
+                position: relative;
+                top: 2px;
+            }
+
+            .tablabel {
+                width: auto;
+                display: inline-block;
+            }
+
+            &.router-link-active {
+
+                .tablabel {
+                    color: $tab-fontColor-active;
+                }
+
+                &::after {
+                    height: 2px;
+                    width: 100%;
+                    background-color: $tab-underline-color;
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

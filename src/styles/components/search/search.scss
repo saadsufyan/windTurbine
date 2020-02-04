@@ -1,0 +1,58 @@
+.search-bar {
+
+  max-height: 100vh;
+  height: calc(100% - 55px);
+  padding-bottom: 15px;
+
+  .windmills-container {
+    width: 100%;
+    .singleWindmill{
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+  .ico-search {
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    margin-top: 12px;
+  }
+  .search-input {
+    border: none;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .loader-indicator {
+    height: 75px;
+    width: 100%;
+    transition: 0.275s all ease;
+    opacity: 1;
+
+    &.hidden {
+      opacity: 0;
+      height: 0;
+    }
+    .loader-container {
+
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      .loader {
+        display: block;
+        background-image: url('~@/assets/images/logo.svg');
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto;
+        animation: rotation 5s linear infinite;
+
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

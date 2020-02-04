@@ -1,0 +1,179 @@
+
+.total-overview {
+    min-height: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+
+    .main-cardinfo {
+        max-width: 65%;
+        width: 65%;
+        //text-overflow: ellipsis;
+        //white-space: nowrap;
+        //overflow: hidden;
+
+        .stats-value {
+            font-size: 17px;
+            font-weight: 600;
+            width: 100%;
+            //text-overflow: ellipsis;
+            //white-space: nowrap;
+            //overflow: hidden;
+            max-width: 100%;
+        }
+        .stats-label {
+            font-size: 11px;
+            line-height: 20px;
+            font-weight: 300;
+        }
+    }
+    .stats-box {
+        color: $white;
+        text-align: center;
+
+        .stats-value {
+            font-size: 20px;
+            line-height: 18px;
+            margin-bottom: 4px;
+            font-weight: bold;
+
+        }
+
+        .stats-label {
+            font-size: 11px;
+            line-height: 14px;
+            font-weight: 300;
+
+        }
+    }
+    .radial-gradient-block {
+        background: $card-radialgradient-wk;
+        background: $card-radialgradient;
+    }
+    .upper-container {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row;
+        color: $white;
+
+        .main-cardinfo {
+            text-align: left;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .prognose-holder {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .prognose-value {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .info-button {
+
+                border-radius: 50%;
+                background-color: $darkgray;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                width: 18px;
+                height: 18px;
+                margin-left: 5px;
+
+                i {
+                    color: $card-bgcolor;
+                    font-size: 11px;
+                    line-height: 18px;
+                }
+
+            }
+        }
+    }
+
+    .current-statsholder {
+        display: flex;
+        height: 250px;
+        padding: 5px;
+        flex-direction: row;
+        justify-content: center;
+
+        .left {
+            width: 33%;
+            margin: 0;
+        }
+
+        .right {
+            width: 33%;
+            margin: 0;
+        }
+
+        .stats-box {
+            margin-top: 20%;
+
+            .stats-value {
+                font-size: 30px;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .stats-label {
+                margin: 0;
+            }
+        }
+
+    }
+
+    .lower-container {
+        width: 100%;
+        padding: 10px 0 20px;
+
+        .stats-holder {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .stats-box {
+                border-left: 1px solid #201F27;
+                border-right: 1px solid #201F27;
+                padding: 5px 10px;
+                min-width: 33%;
+
+                &:first-of-type {
+                    border-left: none;
+                }
+
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+        }
+        .action-button {
+            width: 60vw;
+            display: block;
+            margin: 0 auto;
+            height: 44px;
+            border-radius: 30px;
+            background-color: $primaryButtonColor;
+            color: $white;
+            border: none;
+            -webkit-appearance: none;
+            font-size: 1em;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-top: 26px;
+        }
+    }
+
+    .turbine-holder {
+        width: 160px;
+        display: block;
+    }
+
+}
+
+
+
+
